@@ -22,7 +22,7 @@ const experiences = [
       { name: 'BORAX',            modules: ['CRM'] },
       { name: 'Llantymoto',       modules: ['Ventas', 'Compras', 'Inventario', 'Fabricacion', 'Empleados'] },
       { name: 'Highlanderstraders', modules: ['Ventas', 'Compras'] },
-      { name: 'Wyetree',          modules: ['Sitio web completo'] },
+      { name: 'Movac',           modules: ['Sitio web completo'] },
     ],
   },
 ]
@@ -103,8 +103,8 @@ function AccordionItem({ item, index, inView }) {
                   <p className="font-body text-[10px] text-silver tracking-[0.14em] uppercase mb-3">Clientes atendidos</p>
                   <div className="space-y-2">
                     {item.clients.map((c) => (
-                      <div key={c.name} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 py-2 border-b border-edge/60">
-                        <span className="font-body text-xs font-medium text-white sm:w-36 sm:shrink-0">{c.name}</span>
+                      <div key={c.name} className="flex flex-col gap-1.5 py-2 border-b border-edge/60">
+                        <span className="font-body text-xs font-medium text-white">{c.name}</span>
                         <div className="flex flex-wrap gap-1.5">
                           {c.modules.map((m) => (
                             <span key={m} className="font-body text-[10px] px-2 py-0.5 rounded bg-violet/10 border border-violet/20 text-violet/80">{m}</span>
@@ -128,7 +128,7 @@ export default function Experience() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="experience" className="relative py-28 border-t border-edge">
+    <section id="experience" className="relative py-28 border-t border-edge overflow-x-hidden">
       <div ref={ref} className="max-w-7xl mx-auto px-6 md:px-14">
 
         <motion.div
