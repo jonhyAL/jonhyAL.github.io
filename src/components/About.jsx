@@ -1,4 +1,4 @@
-﻿import { useRef } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FiUser, FiArrowUpRight } from 'react-icons/fi'
 
@@ -107,7 +107,7 @@ export default function About() {
               <div
                 className="absolute top-0 right-0 w-52 h-52 pointer-events-none rounded-full"
                 style={{
-                  background: 'radial-gradient(circle, rgba(139,92,246,0.18) 0%, transparent 70%)',
+                  background: 'radial-gradient(circle, rgba(107,170,142,0.2) 0%, transparent 70%)',
                   filter: 'blur(35px)',
                 }}
               />
@@ -127,3 +127,4 @@ export default function About() {
     </section>
   )
 }
+

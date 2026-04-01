@@ -1,4 +1,4 @@
-﻿export default function AuroraBackground() {
+export default function AuroraBackground() {
   return (
     <div aria-hidden="true" className="fixed inset-0 pointer-events-none" style={{ zIndex: 0 }}>
       <div
@@ -13,7 +13,7 @@
         className="absolute top-0 right-0"
         style={{
           width: '700px', height: '700px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(107,170,142,0.12) 0%, transparent 65%)',
           filter: 'blur(80px)', transform: 'translate(25%, -25%)',
         }}
       />
@@ -21,10 +21,11 @@
         className="absolute bottom-0 left-0"
         style={{
           width: '500px', height: '500px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(109,40,217,0.07) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(46,64,87,0.15) 0%, transparent 65%)',
           filter: 'blur(80px)', transform: 'translate(-25%, 25%)',
         }}
       />
     </div>
   )
 }
+

@@ -7,14 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        night:   '#0B0A0F',
-        surface: '#100F1A',
-        edge:    '#1F1D2E',
-        silver:  '#9B96AB',
-        cream:   '#C8C2AB',
-        violet:  '#8B5CF6',
-        violet2: '#6D28D9',
-        glow:    '#7C3AED',
+        night:   '#1A1A1A',
+        surface: '#1E2530',
+        edge:    '#3D5A75',
+        silver:  '#A8C5C9',
+        cream:   '#FAF3E0',
+        offwhite:'#FDFDFD',
+        teal:    '#6BAA8E',
+        teal2:   '#5A9478',
+        petrol:  '#2E4057',
+        violet:  '#6BAA8E',
+        violet2: '#5A9478',
+        glow:    '#6BAA8E',
       },
       fontFamily: {
         display: ['Syne', 'sans-serif'],

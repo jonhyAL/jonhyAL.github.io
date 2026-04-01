@@ -1,4 +1,4 @@
-﻿import { useRef } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FiLayers, FiArrowUpRight, FiShield, FiRefreshCw, FiUploadCloud, FiBarChart2, FiFileText } from 'react-icons/fi'
 
@@ -90,7 +90,7 @@ function OdooCard({ project, index, inView }) {
     >
       <div
         className="absolute top-0 right-0 w-40 h-40 pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)', filter: 'blur(30px)' }}
+        style={{ background: 'radial-gradient(circle, rgba(107,170,142,0.15) 0%, transparent 70%)', filter: 'blur(30px)' }}
       />
       <div className="relative z-10 flex flex-col gap-4 h-full">
         <div className="flex items-start justify-between gap-3">
@@ -151,7 +151,7 @@ export default function Projects() {
         >
           <div
             className="absolute -top-20 -right-20 w-72 h-72 pointer-events-none"
-            style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.2) 0%, transparent 65%)', filter: 'blur(50px)' }}
+            style={{ background: 'radial-gradient(circle, rgba(107,170,142,0.22) 0%, transparent 65%)', filter: 'blur(50px)' }}
           />
           <div className="relative z-10">
             {/* Header */}
@@ -227,3 +227,4 @@ export default function Projects() {
     </section>
   )
 }
+

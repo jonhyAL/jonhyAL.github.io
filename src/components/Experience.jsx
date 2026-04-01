@@ -1,4 +1,4 @@
-﻿import { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { FiBriefcase, FiExternalLink } from 'react-icons/fi'
 
@@ -157,7 +157,7 @@ export default function Experience() {
                   <div
                     className="absolute bottom-0 right-0 w-40 h-40 pointer-events-none"
                     style={{
-                      background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)',
+                      background: 'radial-gradient(circle, rgba(107,170,142,0.18) 0%, transparent 70%)',
                       filter: 'blur(25px)',
                     }}
                   />
@@ -200,3 +200,4 @@ export default function Experience() {
     </section>
   )
 }
+

@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const words = ['Desarrollador', 'Consultor Odoo', 'Solucionador', 'Jonathan.']
@@ -46,14 +46,14 @@ export default function Intro({ onDone }) {
         <motion.div
           key="intro"
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center overflow-hidden"
-          style={{ background: '#0B0A0F' }}
+          style={{ background: '#1A1A1A' }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           {/* Animated violet glow blob */}
           <motion.div
             className="absolute w-[600px] h-[600px] rounded-full pointer-events-none"
-            style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.22) 0%, transparent 70%)', filter: 'blur(80px)' }}
+            style={{ background: 'radial-gradient(circle, rgba(107,170,142,0.25) 0%, transparent 70%)', filter: 'blur(80px)' }}
             animate={{ scale: [1, 1.12, 1], opacity: [0.6, 1, 0.6] }}
             transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
           />
@@ -146,7 +146,7 @@ export default function Intro({ onDone }) {
           {phase === 2 && (
             <motion.div
               className="absolute inset-0 z-20"
-              style={{ background: '#0B0A0F', transformOrigin: 'bottom' }}
+              style={{ background: '#1A1A1A', transformOrigin: 'bottom' }}
               initial={{ scaleY: 1 }}
               animate={{ scaleY: 0 }}
               transition={{ duration: 0.75, ease: [0.76, 0, 0.24, 1] }}
@@ -157,7 +157,7 @@ export default function Intro({ onDone }) {
           <div className="absolute bottom-8 left-0 right-0 px-8 md:px-14 flex items-center justify-between">
             <span className="font-body text-[10px] text-silver/40 uppercase tracking-[0.2em]">Portfolio</span>
             <motion.div
-              className="h-px bg-violet/40"
+              className="h-px bg-teal/40"
               initial={{ width: 0 }}
               animate={{ width: phase === 0 ? `${count}%` : '100%' }}
               transition={{ duration: 0.1 }}
@@ -170,3 +170,4 @@ export default function Intro({ onDone }) {
     </AnimatePresence>
   )
 }
+

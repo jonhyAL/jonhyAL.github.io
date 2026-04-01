@@ -1,4 +1,4 @@
-﻿import { useRef } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FiCode, FiUsers, FiZap, FiMessageSquare, FiTrendingUp, FiRepeat, FiStar } from 'react-icons/fi'
 
@@ -53,7 +53,7 @@ export default function Skills() {
               <span key={i} className="inline-flex items-center gap-3 shrink-0">
                 <span
                   className="font-display font-bold text-3xl"
-                  style={{ color: 'transparent', WebkitTextStroke: '1px rgba(139,92,246,0.35)' }}
+                  style={{ color: 'transparent', WebkitTextStroke: '1px rgba(107,170,142,0.4)' }}
                 >
                   {item}
                 </span>
@@ -68,7 +68,7 @@ export default function Skills() {
               <span key={i} className="inline-flex items-center gap-3 shrink-0">
                 <span
                   className="font-display font-bold text-3xl"
-                  style={{ color: 'transparent', WebkitTextStroke: '1px rgba(200,194,171,0.15)' }}
+                  style={{ color: 'transparent', WebkitTextStroke: '1px rgba(250,243,224,0.12)' }}
                 >
                   {item}
                 </span>
@@ -91,7 +91,7 @@ export default function Skills() {
               <div
                 className="absolute top-0 right-0 w-44 h-44 pointer-events-none"
                 style={{
-                  background: 'radial-gradient(circle, rgba(139,92,246,0.14) 0%, transparent 70%)',
+                  background: 'radial-gradient(circle, rgba(107,170,142,0.16) 0%, transparent 70%)',
                   filter: 'blur(30px)',
                 }}
               />
@@ -147,3 +147,4 @@ export default function Skills() {
     </section>
   )
 }
+
