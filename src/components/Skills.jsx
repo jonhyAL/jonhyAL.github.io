@@ -13,7 +13,7 @@ const stacks = [
   },
   {
     title: 'Herramientas',
-    items: ['Git / GitHub', 'Antigravity', 'VS Code', 'Postman', 'Xampp', 'NotebookLM'],
+    items: ['Git / GitHub', 'Antigravity', 'VS Code', 'Postman', 'SCRUM', 'NotebookLM'],
   },
 ]
 
