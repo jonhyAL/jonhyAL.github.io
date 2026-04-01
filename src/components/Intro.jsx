@@ -107,7 +107,7 @@ export default function Intro({ onDone }) {
                       style={{
                         fontSize: wordIdx === words.length - 1 ? 'clamp(3.5rem, 12vw, 10rem)' : 'clamp(2rem, 6vw, 5rem)',
                         color: wordIdx === words.length - 1 ? undefined : 'transparent',
-                        WebkitTextStroke: wordIdx === words.length - 1 ? undefined : '1.5px rgba(139,92,246,0.6)',
+                        WebkitTextStroke: wordIdx === words.length - 1 ? undefined : '1.5px rgba(107,170,142,0.6)',
                       }}
                     >
                       {words[wordIdx]}
