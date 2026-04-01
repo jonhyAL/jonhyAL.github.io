@@ -141,15 +141,15 @@ export default function Experience() {
           <span className="font-body text-[11px] font-medium tracking-[0.14em] text-silver uppercase">02 - Experiencia y Formacion</span>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
+        <div className="flex flex-col gap-12">
 
-          <div className="lg:col-span-3">
+          <div>
             {experiences.map((item, i) => (
               <AccordionItem key={item.id} item={item} index={i} inView={inView} />
             ))}
           </div>
 
-          <div className="lg:col-span-2 space-y-8">
+          <div className="space-y-8">
             <div>
               <p className="font-body text-[11px] text-silver tracking-[0.14em] uppercase mb-5">Formacion</p>
               {education.map((e) => (
